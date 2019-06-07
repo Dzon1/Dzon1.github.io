@@ -18,7 +18,7 @@ var form=document.querySelector('#forma');
 form.addEventListener('click',function(e) {
 e.preventDefault();
 var article =document.querySelector('#article').value;
-
+$("#div").html(article);
 $.ajax({url: "index.html", success: function(result){
     $("#div").html(article);
   }});
