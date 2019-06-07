@@ -18,6 +18,7 @@ var div=document.querySelector('#div');
 var form=document.querySelector('#forma');
 form.addEventListener('click',function(e) {
 e.preventDefault();
+document.write('test');
 var article =document.querySelector('#article').value;
 div.innerHTML=article;
 });
