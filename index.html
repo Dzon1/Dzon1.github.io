@@ -14,11 +14,12 @@
 <div id='div'></div>
 
 <script>
+var div=document.querySelector('#div');
 var form=document.querySelector('#forma');
 form.addEventListener('click',function(e) {
 e.preventDefault();
 var article =document.querySelector('#article').value;
-$("#div").html(article);
+div.innerHTML=article;
 });
 <\script>
 </body>
