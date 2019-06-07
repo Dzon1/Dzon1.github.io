@@ -11,12 +11,17 @@
 		<input style="background:aqua;padding:5px 10px;" type="button" name="btn" value="PRETRAZI">
 	</form>
 
+<div id='div'></div>
+
 <script>
 var form=document.querySelector('#forma');
 form.addEventListenner('submit',function(e) {
 e.preventDefault();
 var article =document.querySelector('#article').value;
-document.write(article);
+
+$.ajax({url: "index.html", success: function(result){
+    $("#div").html(article);
+  }});
 } );):
 <\script>
 </body>
