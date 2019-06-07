@@ -6,16 +6,16 @@
 </head>
 <body>
 	<h1 style="margin-bottom:50px;text-align: center;">Dobrodosli na pretragu</h1>
-	<form style="width: 90%;margin:auto;text-align: center;" id="forma" >
+	<form style="width: 90%;margin:auto;text-align: center;" >
 		<input style="padding:5px 10px;display:inline-block;width: 50%;margin:bottom:5px;" type="text" id="article">
-		<input style="background:aqua;padding:5px 10px;" type="button" name="btn" value="PRETRAZI">
+		<input style="background:aqua;padding:5px 10px;" type="button" name="btn" value="PRETRAZI" id="forma">
 	</form>
 
 <div id='div'></div>
 
 <script>
 var form=document.querySelector('#forma');
-form.addEventListener('submit',function(e) {
+form.addEventListener('click',function(e) {
 e.preventDefault();
 var article =document.querySelector('#article').value;
 
