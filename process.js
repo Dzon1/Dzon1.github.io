@@ -20,7 +20,7 @@ forma.addEventListener("submit",function loadDoc(e) {
   	
 	msg='Trazeni artikl <b style="font-size:2rem">"'+article+'"</b> ';
 	if (levo.includes(article.toLowerCase())) {
-		arrow.src='https://cdn.pixabay.com/photo/2015/08/19/16/14/arrow-896214_640.png';
+		arrow.src="https://cdn.pixabay.com/photo/2015/08/19/16/14/arrow-896214_640.png";
 		msg+="je <span style='color:red;font-size:2rem;'>levo</span>";
 	}else if(iza.includes(article.toLowerCase())){
 		arrow.src='https://cdn2.iconfinder.com/data/icons/arrows-vol-1-1/32/down1-512.png';
