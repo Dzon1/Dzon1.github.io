@@ -1,27 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"">
 <head>
 	<meta charset="UTF-8">
 	<title>Trafika</title>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.container{
+		position: relative;
+		height:100vh;
+		
+		
+		background-color:rgba(0,0,0,.7);
+
+	}
+	.container::after{
+		content: '';
+		display:block;
+		position:absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left:0;
+		width: 100%;
+		height: 100%;
+		background: url(http://www.novosti.rs/upload/images/2017%20II//09/01/Tan2017-8-28_18388977_0.jpg) no-repeat;
+		background-position:center;
+		background-size:cover;
+		z-index:-1;
+	}
+	footer{
+		position:absolute;
+		bottom:0;
+		background-color: yellow;
+		width: 100%;
+		text-align: center;
+		font-size: 1.6rem;
+		padding:20px 0;
+	}
+	#btn:focus{
+		outline:0;
+	}
+	
+</style>
 </head>
-<body>
-	<h1 style="margin-bottom:50px;text-align: center;">Dobrodosli na pretragu</h1>
-	<form style="width: 90%;margin:auto;text-align: center;" >
-		<input style="padding:5px 10px;display:inline-block;width: 50%;margin:bottom:5px;" type="text" id="article">
-		<input style="background:aqua;padding:5px 10px;" type="button" name="btn" value="PRETRAZI" id="forma">
+<body> 
+	<div class="container">
+	<h1 style="text-transform:uppercase;margin-bottom:70px;font-size:3rem;text-align: center;color: white;padding-top:30px">Pronadji cigare u trafici</h1>
+	<form id="forma" style="width: 90%;margin:auto;text-align: center;">
+		<input id="article" style="text-align:center;z-index:10;padding:5px 1%;display:inline-block;height:50px;border:0;font-size:2rem;width: 100%;margin:bottom:5px;" type="text" name="article">
+		<input style="z-index:10;background:green;border:2px solid black;border-radius:10px;display:inline-block;width:40%;padding:5px 3%;margin-bottom:10px;margin-top:10px;font-size:2rem;" type="submit"  name="btn" value="PRETRAZI" id="btn">
 	</form>
-
-<div id='div'></div>
-
-<script>
-var div=document.querySelector('#div');
-var form=document.querySelector('#forma');
-form.addEventListener('click',function(e) {
-e.preventDefault();
-document.write('test');
-var article =document.querySelector('#article').value;
-div.innerHTML=article;
-});
-</script>
+	<div style="width: 90%;text-align:center;padding:30px 2%;margin:auto;height: 70px;font-size: 2rem;background-color:aqua;margin-top: 20px;" id="result"></div>
+	<footer>
+		
+		<h3>This is one page App - created by Dzony</h3>
+		
+	</footer>
+	</div>
+<script src="process.js"></script>
 </body>
 </html>
