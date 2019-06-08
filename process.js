@@ -36,7 +36,7 @@ forma.addEventListener("submit",function loadDoc(e) {
 		msg+= "<span style='color:red;font-size:2rem;'>nije na stanju</span>";
 	}
 }else{
-	arrow.src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Icon-round-Question_mark.svg/1024px-Icon-round-Question_mark.svg.png';
+	arrow.src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Icon-round-Question_mark.svg/1024px-Icon-round-Question_mark.svg.png";
 	msg= "<span style='color:red'>Niste uneli tekst</span>";
 }
 	document.getElementById('article').value = "";
