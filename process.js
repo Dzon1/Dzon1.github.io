@@ -7,6 +7,7 @@ console.log('test');
 var msg;
 var forma = document.getElementById('forma');
 var result = document.getElementById('result');
+var  arrow= document.getElementById('arrow');
 forma.addEventListener("submit",function loadDoc(e) {
 	e.preventDefault();
 	msg='';
@@ -16,19 +17,26 @@ forma.addEventListener("submit",function loadDoc(e) {
     if (this.readyState == 4 && this.status == 200) {
 
   if (article !== '') {
+  	
 	msg='Trazeni artikl <b style="font-size:2rem">"'+article+'"</b> ';
 	if (levo.includes(article.toLowerCase())) {
-		msg+="je <span style='color:red;font-size:2rem;'>levo</span><img height='50px' width='50px' src='https://cdn.pixabay.com/photo/2015/08/19/16/14/arrow-896214_640.png'/>";
+		arrow.src='https://cdn.pixabay.com/photo/2015/08/19/16/14/arrow-896214_640.png';
+		msg+="je <span style='color:red;font-size:2rem;'>levo</span>";
 	}else if(iza.includes(article.toLowerCase())){
-		msg+="je <span style='color:red;font-size:2rem;'>iza</span><img height='50px' width='50px' src='https://cdn2.iconfinder.com/data/icons/arrows-vol-1-1/32/down1-512.png'/>";
+		arrow.src='https://cdn2.iconfinder.com/data/icons/arrows-vol-1-1/32/down1-512.png';
+		msg+="je <span style='color:red;font-size:2rem;'>iza</span>";
 	}else if(ukoso_desno.includes(article.toLowerCase())){
-		msg+="je <span style='color:red;font-size:2rem;'>ukoso-desno</span><img height='50px' width='80px' src='https://www.charbase.com/images/glyph/8600'/>"
+		arrow.src='https://www.charbase.com/images/glyph/8600';
+		msg+="je <span style='color:red;font-size:2rem;'>ukoso-desno</span>"
 	}else if(desno.includes(article.toLowerCase())){
-        msg+="je <span style='color:red;font-size:2rem;'>desno</span><img height='50px' width='80px' src='https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Arrow_east.svg/800px-Arrow_east.svg.png'/>";
+		arrow.src='https://cdn3.iconfinder.com/data/icons/social-productivity-line-art-3/128/arrow-right2-512.png';
+        msg+="je <span style='color:red;font-size:2rem;'>desno</span>";
 	} else{
-		msg+= "<span style='color:red;font-size:2rem;'>nije na stanju</span><img height='50px' width='50px' src='https://www.charbase.com/images/glyph/8600'/>";
+		arrow.src='https://img.icons8.com/cotton/2x/cancel-2--v1.png';
+		msg+= "<span style='color:red;font-size:2rem;'>nije na stanju</span>";
 	}
 }else{
+	arrow.src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Icon-round-Question_mark.svg/1024px-Icon-round-Question_mark.svg.png';
 	msg= "<span style='color:red'>Niste uneli tekst</span>";
 }
 	document.getElementById('article').value = "";
