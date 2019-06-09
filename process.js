@@ -1,8 +1,16 @@
+function myFunction() {
+  var person = prompt("Unesite Vase ime?", "");
+  if (person != null) {
+    document.getElementById("demo").innerHTML =
+    "Zdravo " + person + "!";
+  }
+}
+
 var levo = ["ld klub","eve","rotmans siroki","rotmans slim","ld club"];
 var iza = ["rotmans","ld","monus","cesterfild","de santis"];
 var ukoso_desno = ["bond","winston","monte carlo","viceroy","fast","gauloises","next","davidoff","karelija"];
 var desno = ["lm","lucky strike","laki strajk","west","marlboro","camel","jade","diva","pall mall","ronhill","opposite","parlament"];
-
+alert("Zdravo Dzoni");
 console.log('test');
 var msg;
 var forma = document.getElementById('forma');
