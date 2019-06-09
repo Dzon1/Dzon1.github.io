@@ -1,12 +1,3 @@
-var demo =  document.getElementById("demo");
-function myFunction() {
-  var person = prompt("Unesite Vase ime?", "");
-  if (person != null) {
-   demo.innerHTML =
-    "Zdravo " + person + "!";
-  }
-}
-window.onload= myFunction;
 var levo = ["ld klub","eve","rotmans siroki","rotmans slim","ld club"];
 var iza = ["rotmans","ld","monus","cesterfild","de santis"];
 var ukoso_desno = ["bond","winston","monte carlo","viceroy","fast","gauloises","next","davidoff","karelija"];
