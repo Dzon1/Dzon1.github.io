@@ -1,7 +1,8 @@
+var demo =  document.getElementById("demo");
 function myFunction() {
   var person = prompt("Unesite Vase ime?", "");
   if (person != null) {
-    document.getElementById("demo").innerHTML =
+   demo.innerHTML =
     "Zdravo " + person + "!";
   }
 }
