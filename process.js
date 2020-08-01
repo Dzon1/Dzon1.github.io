@@ -11,9 +11,9 @@ naslov.css({left:"-1000px"});
 naslov.animate({
 left:0,
 top:600,
-fontSize:64}
+fontSize:68}
 ,1300, function(){
-naslov.animate({
+naslov.delay(1200).animate({
 top:0,
 fontSize:48
 }
