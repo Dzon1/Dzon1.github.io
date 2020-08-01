@@ -11,6 +11,11 @@ naslov.css({
 position:"relative",
 left:-1000
 });
+naslov.setTimeout(function(){
+naslov.css({
+left:0
+});
+},1000);
 var  arrow= document.getElementById('arrow');
 var ac=$("#arrow_container");
 ac.hide();
