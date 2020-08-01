@@ -7,7 +7,7 @@ var forma = document.getElementById('forma');
 var result = document.getElementById('result');
 var  arrow= document.getElementById('arrow');
 var ac=$("#arrow_container");
-if(jQuery)alert("tacno");
+if(window.jQuery)alert("tacno");
 forma.addEventListener("submit",function loadDoc(e) {
 	e.preventDefault();
 ac.hide();
