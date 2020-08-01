@@ -7,10 +7,9 @@ var forma = document.getElementById('forma');
 var result = document.getElementById('result');
 var  arrow= document.getElementById('arrow');
 var ac=$("#arrow_container");
-if(window.jQuery)alert("tacno");
+alert(ac);
 forma.addEventListener("submit",function loadDoc(e) {
 	e.preventDefault();
-ac.hide();
 	msg='';
 	var article = document.getElementById('article').value.trim();
   var xhttp = new XMLHttpRequest();
