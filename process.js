@@ -29,7 +29,7 @@ ac.hide();
 result.hide();
 forma.addEventListener("submit",function loadDoc(e) {
 	e.preventDefault();
-btn.hide("explode");
+btn.hide("explode",{pieces:64},1000);
         ac.fadeIn().fadeOut(3500);
         result.slideDown().slideUp(4500);
 	msg='';
@@ -64,9 +64,9 @@ btn.hide("explode");
 	document.getElementById('article').value = "";
       result.html(msg);
      window.setTimeout(function(){
-     btn.show("explode");
+     btn.show("explode",{pieces:64},1000);
 }
-,1000);
+,2300);
     }
   };
   xhttp.open("GET", "", true);
