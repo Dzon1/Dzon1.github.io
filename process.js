@@ -6,6 +6,11 @@ var desno = ["lm","lucky strike","laki strajk","west","marlboro","camel","jade",
 var msg;
 var forma = document.getElementById('forma');
 var result = $('#result');
+var naslov=$("h1");
+naslov.css({
+position:"relative",
+left:-1000
+});
 var  arrow= document.getElementById('arrow');
 var ac=$("#arrow_container");
 ac.hide();
