@@ -10,7 +10,7 @@ var  arrow= document.getElementById('arrow');
 var ac=$("#arrow_container");
 forma.addEventListener("submit",function loadDoc(e) {
 	e.preventDefault();
-        ac.hide();
+        ac.fadeIn(slow);
 	msg='';
 	var article = document.getElementById('article').value.trim();
   var xhttp = new XMLHttpRequest();
