@@ -9,14 +9,14 @@ var result = $('#result');
 var naslov=$("h1");
 
 naslov.animate({
-left:200
+left:200}
 ,1300, function(){
 naslov.animate({
 left:0
 }
 ,300);
 }
-)};
+);
 var  arrow= document.getElementById('arrow');
 var ac=$("#arrow_container");
 ac.hide();
