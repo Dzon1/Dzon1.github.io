@@ -44,7 +44,7 @@ forma.addEventListener("submit",function loadDoc(e) {
 	msg= "<span style='color:red'>Niste uneli tekst</span>";
 }
 	document.getElementById('article').value = "";
-      result.text(msg);
+      result.html(msg);
     }
   };
   xhttp.open("GET", "", true);
