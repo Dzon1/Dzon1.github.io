@@ -1,4 +1,5 @@
 $(document).ready(function(){
+alert("ready");
 var levo = ["ld klub","eve","rotmans siroki","rotmans slim","ld club"];
 var iza = ["rotmans","ld","monus","cesterfild","de santis"];
 var ukoso_desno = ["bond","winston","monte carlo","viceroy","fast","gauloises","next","davidoff","karelija"];
