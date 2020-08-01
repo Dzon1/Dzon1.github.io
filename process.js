@@ -1,5 +1,4 @@
 $(document).ready(function(){
-alert("ready");
 var levo = ["ld klub","eve","rotmans siroki","rotmans slim","ld club"];
 var iza = ["rotmans","ld","monus","cesterfild","de santis"];
 var ukoso_desno = ["bond","winston","monte carlo","viceroy","fast","gauloises","next","davidoff","karelija"];
@@ -8,8 +7,10 @@ var msg;
 var forma = document.getElementById('forma');
 var result = document.getElementById('result');
 var  arrow= document.getElementById('arrow');
+var ac=$("#arrow_container");
 forma.addEventListener("submit",function loadDoc(e) {
 	e.preventDefault();
+        ac.hide();
 	msg='';
 	var article = document.getElementById('article').value.trim();
   var xhttp = new XMLHttpRequest();
