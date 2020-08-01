@@ -11,7 +11,7 @@ var ac=$("#arrow_container");
 ac.hide();
 forma.addEventListener("submit",function loadDoc(e) {
 	e.preventDefault();
-        ac.fadeIn("slow");
+        ac.fadeIn().fadeOut(3500);
 	msg='';
 	var article = document.getElementById('article').value.trim();
   var xhttp = new XMLHttpRequest();
