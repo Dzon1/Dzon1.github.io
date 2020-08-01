@@ -7,15 +7,12 @@ var msg;
 var forma = document.getElementById('forma');
 var result = $('#result');
 var naslov=$("h1");
-naslov.css({
-position:"relative",
-left:-1000
-});
-naslov.setTimeout(function(){
-naslov.css({
+
+naslov.animate({
+left:200
+},1000).animate({
 left:0
-});
-},1000);
+},300);
 var  arrow= document.getElementById('arrow');
 var ac=$("#arrow_container");
 ac.hide();
