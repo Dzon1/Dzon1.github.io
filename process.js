@@ -7,6 +7,7 @@ var msg;
 var forma = document.getElementById('forma');
 var result = $('#result');
 var naslov=$("h1");
+var btn=$("#btn");
 naslov.css({left:"-1000px"});
 naslov.animate({
 left:0,
@@ -28,6 +29,7 @@ ac.hide();
 result.hide();
 forma.addEventListener("submit",function loadDoc(e) {
 	e.preventDefault();
+btn.hide("explode");
         ac.fadeIn().fadeOut(3500);
         result.slideDown().slideUp(4500);
 	msg='';
@@ -61,6 +63,10 @@ forma.addEventListener("submit",function loadDoc(e) {
 }
 	document.getElementById('article').value = "";
       result.html(msg);
+     window.setTimeout(function(){
+     btn.show("explode");
+}
+,1000);
     }
   };
   xhttp.open("GET", "", true);
