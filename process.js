@@ -6,8 +6,6 @@ var msg;
 var forma = document.getElementById('forma');
 var result = document.getElementById('result');
 var  arrow= document.getElementById('arrow');
-var ac=$("#arrow_container");
-alert(ac);
 forma.addEventListener("submit",function loadDoc(e) {
 	e.preventDefault();
 	msg='';
