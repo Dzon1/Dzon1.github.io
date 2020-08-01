@@ -11,13 +11,15 @@ naslov.css({left:"-1000px"});
 naslov.animate({
 left:0,
 top:600,
-fontSize:68}
+fontSize:64}
 ,1300, function(){
+naslov.css("color","gold");
 naslov.delay(1200).animate({
 top:0,
 fontSize:48
 }
 ,300);
+naslov.css("color","white");
 }
 );
 var  arrow= document.getElementById('arrow');
