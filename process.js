@@ -10,7 +10,7 @@ var naslov=$("h1");
 
 naslov.animate({
 left:200
-},1000).animate({
+},1300).animate({
 left:0
 },300);
 var  arrow= document.getElementById('arrow');
