@@ -7,7 +7,7 @@ var msg;
 var forma = document.getElementById('forma');
 var result = $('#result');
 var naslov=$("h1");
-
+naslov.css({left:"-1000px"});
 naslov.animate({
 left:200}
 ,1300, function(){
