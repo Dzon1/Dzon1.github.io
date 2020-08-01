@@ -10,7 +10,7 @@ var naslov=$("h1");
 
 naslov.animate({
 left:200
-},1300, function(){
+,1300, function(){
 naslov.animate({
 left:0
 },300);
