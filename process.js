@@ -13,7 +13,7 @@ result.hide();
 forma.addEventListener("submit",function loadDoc(e) {
 	e.preventDefault();
         ac.fadeIn().fadeOut(3500);
-        result.slideUp().slideDown(4500);
+        result.slideDown().slideUp(4500);
 	msg='';
 	var article = document.getElementById('article').value.trim();
   var xhttp = new XMLHttpRequest();
