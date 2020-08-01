@@ -11,11 +11,11 @@ naslov.css({left:"-1000px"});
 naslov.animate({
 left:0,
 top:600,
-fontSize:"1.5rem"}
+fontSize:48}
 ,1300, function(){
 naslov.animate({
 top:0,
-fontSize:"1.3rem"
+fontSize:26
 }
 ,300);
 }
