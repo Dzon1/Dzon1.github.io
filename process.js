@@ -13,7 +13,9 @@ left:200
 ,1300, function(){
 naslov.animate({
 left:0
-},300);
+}
+,300);
+}
 )};
 var  arrow= document.getElementById('arrow');
 var ac=$("#arrow_container");
