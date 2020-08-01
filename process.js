@@ -45,7 +45,7 @@ forma.addEventListener("submit",function loadDoc(e) {
   xhttp.open("GET", "", true);
   xhttp.send();
 });
-}
+});
 
 
 
