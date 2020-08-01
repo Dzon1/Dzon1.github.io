@@ -8,6 +8,7 @@ var forma = document.getElementById('forma');
 var result = document.getElementById('result');
 var  arrow= document.getElementById('arrow');
 var ac=$("#arrow_container");
+ac.hide();
 forma.addEventListener("submit",function loadDoc(e) {
 	e.preventDefault();
         ac.fadeIn("slow");
