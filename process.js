@@ -10,10 +10,12 @@ var naslov=$("h1");
 naslov.css({left:"-1000px"});
 naslov.animate({
 left:0,
-top:600}
+top:600,
+font-size:1.5rem}
 ,1300, function(){
 naslov.animate({
-top:0
+top:0,
+font-size:auto
 }
 ,300);
 }
