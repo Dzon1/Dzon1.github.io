@@ -5,13 +5,15 @@ var ukoso_desno = ["bond","winston","monte carlo","viceroy","fast","gauloises","
 var desno = ["lm","lucky strike","laki strajk","west","marlboro","camel","jade","diva","pall mall","ronhill","opposite","parlament"];
 var msg;
 var forma = document.getElementById('forma');
-var result = document.getElementById('result');
+var result = $('#result');
 var  arrow= document.getElementById('arrow');
 var ac=$("#arrow_container");
 ac.hide();
+result.hide();
 forma.addEventListener("submit",function loadDoc(e) {
 	e.preventDefault();
         ac.fadeIn().fadeOut(3500);
+        result.slideUp().slideDown(4500);
 	msg='';
 	var article = document.getElementById('article').value.trim();
   var xhttp = new XMLHttpRequest();
@@ -42,7 +44,7 @@ forma.addEventListener("submit",function loadDoc(e) {
 	msg= "<span style='color:red'>Niste uneli tekst</span>";
 }
 	document.getElementById('article').value = "";
-      result.innerHTML = msg;
+      result.text(msg);
     }
   };
   xhttp.open("GET", "", true);
