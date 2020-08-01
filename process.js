@@ -9,10 +9,11 @@ var result = $('#result');
 var naslov=$("h1");
 naslov.css({left:"-1000px"});
 naslov.animate({
-left:200}
+left:0,
+top:600}
 ,1300, function(){
 naslov.animate({
-left:0
+top:0
 }
 ,300);
 }
