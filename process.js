@@ -8,7 +8,7 @@ var forma = document.getElementById('forma');
 var result = $('#result');
 var naslov=$("h1");
 var btn=$("#btn");
-var x=document.getElementById("myAudio");
+var audio = new Audio('audioe.mp3');
 naslov.css({left:"-1000px"});
 naslov.animate({
 left:0,
@@ -30,10 +30,10 @@ ac.hide();
 result.hide();
 forma.addEventListener("submit",function loadDoc(e) {
 	e.preventDefault();
-x.play();
+audio.play();
 ac.show("explode",{pieces:14},1000);
 window.setTimeout(function(){
-x.play();
+audio.play();
   ac.hide("explode",{pieces:14},1200);
 },4000);
         //ac.fadeIn().fadeOut(3500);
