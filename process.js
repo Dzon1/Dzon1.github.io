@@ -13,13 +13,12 @@ var welcome=new Audio("welcome.mp3");
 var  arrow= document.getElementById('arrow');
 var ac=$("#arrow_container");
 naslov.css({left:"-1000px"});
-
+welcome.play();
 naslov.animate({
 left:0,
 top:600,
 fontSize:64}
 ,1300, function(){
-welcome.play();
 naslov.css("color","gold");
 naslov.delay(1200).animate({
 top:0,
