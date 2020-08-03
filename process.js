@@ -30,8 +30,7 @@ ac.hide();
 result.hide();
 forma.addEventListener("submit",function loadDoc(e) {
 	e.preventDefault();
-audio.play();
-ac.show("explode",{pieces:14},1000);
+
 window.setTimeout(function(){
 audio.play();
   ac.hide("explode",{pieces:14},1200);
@@ -70,6 +69,8 @@ audio.play();
 	document.getElementById('article').value = "";
       result.html(msg);
     }
+    audio.play();
+ac.show("explode",{pieces:14},1000);
   };
   xhttp.open("GET", "", true);
   xhttp.send();
