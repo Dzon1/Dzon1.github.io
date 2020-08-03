@@ -9,9 +9,11 @@ var result = $('#result');
 var naslov=$("h1");
 var btn=$("#btn");
 var audio = new Audio('audioe.mp3');
+var welcome=new Audio("welcome.mp3);
 var  arrow= document.getElementById('arrow');
 var ac=$("#arrow_container");
 naslov.css({left:"-1000px"});
+welcome.play();
 naslov.animate({
 left:0,
 top:600,
