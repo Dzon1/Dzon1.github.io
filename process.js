@@ -9,6 +9,8 @@ var result = $('#result');
 var naslov=$("h1");
 var btn=$("#btn");
 var audio = new Audio('audioe.mp3');
+var  arrow= document.getElementById('arrow');
+var ac=$("#arrow_container");
 naslov.css({left:"-1000px"});
 naslov.animate({
 left:0,
@@ -24,13 +26,11 @@ fontSize:48
 naslov.css("color","white");
 }
 );
-var  arrow= document.getElementById('arrow');
-var ac=$("#arrow_container");
 ac.hide();
 result.hide();
 forma.addEventListener("submit",function loadDoc(e) {
 	e.preventDefault();
-
+arrow.src="";
 window.setTimeout(function(){
 audio.play();
   ac.hide("explode",{pieces:14},1200);
