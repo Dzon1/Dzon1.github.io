@@ -29,8 +29,8 @@ ac.hide();
 result.hide();
 forma.addEventListener("submit",function loadDoc(e) {
 	e.preventDefault();
-ac.hide("explode",{pieces:14},1500);
-        ac.fadeIn().fadeOut(3500);
+ac.show("explode",{pieces:14},300).hide("explode",{pieces:14},4000);
+        //ac.fadeIn().fadeOut(3500);
         result.slideDown().slideUp(4500);
 	msg='';
 	var article = document.getElementById('article').value.trim();
