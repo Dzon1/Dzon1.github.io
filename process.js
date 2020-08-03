@@ -8,7 +8,7 @@ var forma = document.getElementById('forma');
 var result = $('#result');
 var naslov=$("h1");
 var btn=$("#btn");
-var x=$("#myAudio");
+var x=document.getElementById("myAudio");
 naslov.css({left:"-1000px"});
 naslov.animate({
 left:0,
