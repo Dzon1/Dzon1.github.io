@@ -29,10 +29,10 @@ ac.hide();
 result.hide();
 forma.addEventListener("submit",function loadDoc(e) {
 	e.preventDefault();
-ac.show("explode",{pieces:14},300);
+ac.show("explode",{pieces:14},1000);
 window.setTimeout(function(){
-  ac.hide("explode",{pieces:14},4000);
-});
+  ac.hide("explode",{pieces:14},1200);
+},4000);
         //ac.fadeIn().fadeOut(3500);
         result.slideDown().slideUp(4500);
 	msg='';
