@@ -13,9 +13,8 @@ var welcome=new Audio("welcome.mp3");
 var  arrow= document.getElementById('arrow');
 var ac=$("#arrow_container");
 naslov.css({left:"-1000px"});
-window.setTimeout(function(){
+
 welcome.play();
-},300);
 naslov.animate({
 left:0,
 top:600,
